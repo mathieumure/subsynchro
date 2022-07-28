@@ -3,10 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
+  "bin": {
+    "@mathieumure/subsynchro": "bin/subsynchro.js",
+    "subsynchro": "bin/subsynchro.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Mathieu Mure",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.4.0",
+    "subsynchro": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
 }
